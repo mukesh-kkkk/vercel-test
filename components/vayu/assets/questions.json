@@ -1,0 +1,978 @@
+{
+    "questions": [
+      {
+        "id": "first_name",
+        "component": "inputName",
+        "group": "basic_information",
+        "next": "phone_number",
+        "reply": "",
+        "tag": "user",
+        "text": "What is your name?",
+        "type": "text"
+      },
+      {
+        "id": "phone_number",
+        "component": "inputPhoneNumber",
+        "group": "basic_information",
+        "next": "email",
+        "reply": "",
+        "sub_text": "",
+        "tag": "user",
+        "text": "Phone Number",
+        "type": "tel",
+        "country": ""
+      },
+      {
+        "id": "email",
+        "component": "inputEmail",
+        "group": "basic_information",
+        "next": "C1d",
+        "reply": "",
+        "tag": "user",
+        "text": "Email",
+        "type": "text"
+      },
+      {
+        "id": "C1d",
+        "component": "inputAge",
+        "group": "basic_information",
+        "next": "gender",
+        "reply": "",
+        "tag": "form",
+        "text": "How old are you?",
+        "type": "tel"
+      },
+      {
+        "id": "gender",
+        "component": "inputRadioV2",
+        "group": "basic_information",
+        "next": "morning_facial",
+        "reply": "",
+        "tag": "user",
+        "text": "Gender",
+        "type": "single_choice",
+        "optionMap": [
+          {
+            "name": "Male",
+            "value": "M"
+          },
+          {
+            "name": "Female",
+            "value": "F"
+          }
+        ]
+      },
+      {
+        "id": "morning_facial",
+        "component": "inputRadioV4",
+        "group": "skin_assessment",
+        "next": "later_day_facial",
+        "reply": "",
+        "tag": "form",
+        "text": "In the morning, my facial skin feels like",
+        "type": "single_choice",
+        "optionMap": [
+          {
+            "name": "Overall oliy face",
+            "value": "overall_oily_face"
+          },  
+          {
+            "name": " Oily forehead, nose and chin",
+            "value": "oily_forehead"
+          }, 
+          {
+            "name": "Dryness with a tight feeling",
+            "value": "dryness"
+          },
+          {
+            "name": "Neither oily, nor dry",
+            "value": "neither_oil_dry"
+          }
+        ],
+        "whyWeAsk": {
+          "show": false,
+          "text": "It helps"
+        }
+      },
+      {
+        "id": "later_day_facial",
+        "component": "inputRadio",
+        "group": "skin_assessment",
+        "next": "skin_sensitivity",
+        "reply": "",
+        "showImages": false,
+        "absoluteImagePath":false,
+        "tag": "form",
+        "text": "Later in the day, my facial skin feels like…",
+        "hindi_text": "Later in the day, my facial skin feels like…",
+        "type": "single_choice",
+        "optionMap": [
+          {
+            "name": "Overall oliy face",
+            "value": "overall_oily_face"
+          },  
+          {
+            "name": " Oily forehead, nose and chin",
+            "value": "oily_forehead"
+          }, 
+          {
+            "name": "Dryness with a tight feeling",
+            "value": "dryness"
+          },
+          {
+            "name": "Neither oily, nor dry",
+            "value": "neither_oil_dry"
+          }
+        ],
+        "whyWeAsk": {
+          "show": false,
+          "text": "Help in better precscription of kit."
+        }
+      },
+      {
+        "id": "skin_sensitivity",
+        "component": "inputRadioV4",
+        "group": "skin_assessment",
+        "next": "skin_concern_primary",
+        "reply": "",
+        "tag": "form",
+        "text": "Do you have a sensitive skin?",
+        "type": "single_choice",
+        "optionMap": [
+          {
+            "name": "Very sensitive - My skin usually reacts to skincare products",
+            "value": "very_sensitive"
+          },  
+          {
+            "name": "Sensitive - My skin sometimes reacts to skincare products",
+            "value": "sensitive"
+          },
+          {
+            "name": "Not sensitive",
+            "value": "not_sensitive"
+          }
+        ],
+        "whyWeAsk": {
+          "show": false,
+          "text": "Helps in better prescription of kit."
+        }
+      },  
+      {
+        "id": "skin_concern_primary",
+        "component": "inputRadioV4",
+        "group": "skin_concerns",
+        "next": "skin_concern_secondary",
+        "reply": "",
+        "tag": "form",
+        "text": "What is your primary skin concern?",
+        "type": "single_choice",
+
+        "optionMap": [
+          {
+            "name": "Acne or Pimples",
+            "value": "acne_pimples"
+          },
+          {
+            "name": "Acne spots or marks",
+           
+            "value": "acne_spots_marks"
+          },
+          {
+            "name": "Pigmentation",
+            "value": "pigmentation"
+          },
+          {
+            "name": "Wrinkles",
+            "value": "wrinkles"
+          },
+          {
+            "name": "Dark spots",
+            "value": "dark_spots"
+          },
+          {
+            "name": "Open pores (dry/rough skin)",
+            "value": "open_pores"
+          },
+          {
+            "name": "Dark circles",
+            "value": "dark_circles"
+          },
+          {
+            "name": "Eczema",
+            "value": "open_pores"
+          },
+          {
+            "name": "Psoriasis",
+            "value": "psoriasis"
+          },
+          {
+            "name": "Urticaria",
+            "value": "urticaria"
+          }
+        ],
+        "whyWeAsk": {
+          "show": false,
+          "text": "Contrary to the popular belief, genetic hair loss can be managed. However, genetic hair fall cases can require special attention to be addressed in the right way."
+        }
+      },
+      {
+        "id": "skin_concern_secondary",
+        "component": "inputRadioV4",
+        "group": "skin_concerns",
+        "next": "additional_goals",
+        "reply": "",
+        "showImages": false,
+        "tag": "form",
+        "text": "What is your secondary skin concern?",
+        "type": "single_choice",
+        "optionMap": [
+          {
+            "name": "Acne or Pimples",
+            "value": "acne_pimples"
+          },
+          {
+            "name": "Acne spots or marks",
+           
+            "value": "acne_spots_marks"
+          },
+          {
+            "name": "Pigmentation",
+            "value": "pigmentation"
+          },
+          {
+            "name": "Wrinkles",
+            "value": "wrinkles"
+          },
+          {
+            "name": "Dark spots",
+            "value": "dark_spots"
+          },
+          {
+            "name": "Open pores (dry/rough skin)",
+            "value": "open_pores"
+          },
+          {
+            "name": "Dark circles",
+            "value": "dark_circles"
+          },
+          {
+            "name": "Eczema",
+            "value": "open_pores"
+          },
+          {
+            "name": "Psoriasis",
+            "value": "psoriasis"
+          },
+          {
+            "name": "Urticaria",
+            "value": "urticaria"
+          }
+        ],
+        "whyWeAsk": {
+          "show": false,
+          "text": "Getting a visual reference gives us a clearer idea of where you stand currently based on the extent of your hair loss, and it allows us set the right expectation about the time taken to show results."
+        }
+      },
+      {
+        "id": "additional_goals",
+        "component": "inputCheckbox",
+        "group": "skin_concerns",
+        "next": "skin_isssues_duration",
+        "reply": "",
+        "sub_text": "Select at least one option",
+        "tag": "form",
+        "text": "What are your additional skin goals?",
+        "type": "multiple_choice",
+        "optionMap": [
+          {
+            "name": "Skin radiance & glow",
+            "value": "skin_radiance _glow"
+          },
+          {
+            "name": "Skin smoothness",
+            "value": "skin_smoothness"
+          },
+         
+          {
+            "name": "Pollution detox",
+            "value": "pollution_detox"
+          }
+        ],
+        "whyWeAsk": {
+          "show": false,
+          "text": "Things like severe illnesses, surgery, major weight loss or weight gain can put the body under a state of stress, which can affect your hair growth cycles temporarily."
+        }
+      },
+      {
+        "id": "skin_isssues_duration",
+        "component": "inputRadioV4",
+        "group": "skin_concerns",
+        "next": "family_history",
+        "reply": "",
+        "sub_text": "Select at least one option",
+        "tag": "form",
+        "text": "Since when have you been facing these skin issues?",
+        "type": "multiple_choice",
+        "optionMap": [
+          {
+            "name": "Since 4 weeks",
+            "value": "one_one_month"
+          },
+          {
+            "name": "Since 2-3 months",
+            "value": "two_ three_ months"
+          },
+          {
+            "name": "Since 1 year",
+            "value": "since_one_year"
+          },
+          {
+            "name": "More than 1 year",
+            "value": "more_than_one_year"
+          },
+          {
+            "name": "Since Childhood",
+            "value": "since_childhood"
+          }
+        ]
+      },
+      {
+        "id": "family_history",
+        "component": "inputRadioV4",
+        "group": "skin_concerns",
+        "next": "outdoor_duration",
+        "reply": "",
+        "tag": "form",
+        "text": "Do you have a family history of these skin concerns?",
+        "type": "single_choice",
+        "optionMap": [
+          {
+            "name": "Yes",
+            "value": "yes"
+          },
+          {
+            "name": "No",
+            "value": "no"
+          },
+          {
+            "name": "Not aware",
+            "value": "not_aware"
+          }
+        ]
+      },
+      {
+        "id": "acne_appearance",
+        "component": "inputRadioV4",
+        "group": "skin_concerns",
+        "next": "acne_breakout_area",
+        "reply": "",
+        "tag": "form",
+        "text": "How often does your acne appear?",
+        "type": "single_choice",
+        "optionMap": [
+          {
+            "name": "About once every week",
+            "value": "once_every_week"
+          },
+          {
+            "name": "About once a month",
+            "value": "once_every_month"
+          },
+          {
+            "name": "About once in three months",
+            "value": "once_three_months"
+          },
+          {
+            "name": "I break out due to certain products",
+            "value": "due_to_certain_products"
+          }
+        ]
+      },
+      {
+        "id": "acne_breakout_area",
+        "component": "inputRadioV4",
+        "group": "skin_concerns",
+        "next": "comedones_count",
+        "reply": "",
+        "tag": "form",
+        "text": "Are your breakouts concentrated in certain areas, or located all over your face?",
+        "type": "single_choice",
+        "optionMap": [
+          {
+            "name": "Concentrated in certain areas",
+            "value": "certain_area"
+          },
+          {
+            "name": "Located all over",
+            "value": "located_all_over"
+          }
+        ]
+      },
+      {
+        "id": "comedones_count",
+        "component": "inputRadioV4",
+        "group": "skin_concerns",
+        "next": "red_pimple_count",
+        "reply": "",
+        "tag": "form",
+        "text": "How many Comedones (Whiteheads, Blackheads, Tiny pimples) do you have on your face?",
+        "optionMap": [
+          {
+            "name": "Less than 5",
+            "value": "less_than_5"
+          },
+          {
+            "name": "About 5 to 10",
+            "value": "upto_10"
+          },
+          {
+            "name": "More than 10",
+            "value": "more_than_10"
+          }
+        ]
+      },
+      {
+        "id": "red_pimple_count",
+        "component": "inputRadioV4",
+        "group": "skin_concerns",
+        "next": "pus_pimple_count",
+        "reply": "",
+        "tag": "form",
+        "text": "How many red pimples do you have on your face?",
+        "type": "single_choice",
+        "optionMap": [
+          {
+            "name": "0-2",
+            "value": "upto_2"
+          },
+          {
+            "name": "2-5",
+            "value": "upto_5"
+          },
+          {
+            "name": "More than 5",
+            "value": "morethan_5"
+          }
+        ]
+      },
+      {
+        "id": "pus_pimple_count",
+        "component": "inputRadioV4",
+        "group": "skin_concerns",
+        "next": "acne_scars_count",
+        "reply": "",
+        "tag": "form",
+        "text": "How many pus filled pimples do you have on your face?",
+        "type": "single_choice",
+        "optionMap": [
+          {
+            "name": "0-2",
+            "value": "upto_2"
+          },
+          {
+            "name": "2-5",
+            "value": "upto_5"
+          },
+          {
+            "name": "More than 5",
+            "value": "more_than_5"
+          }
+        ]
+      },
+      {
+        "id": "acne_scars_count",
+        "component": "inputRadioV4",
+        "group": "skin_concerns",
+        "next": "outdoor_duration",
+        "reply": "",
+        "tag": "form",
+        "text": "How many acne scars (Craters, Pits and Depressions left by past acne) do you have? ",
+        "type": "single_choice",
+        "optionMap": [
+          {
+            "name": "0-2",
+            "value": "upto_2"
+          },
+          {
+            "name": "2-5",
+            "value": "upto_5"
+          },
+          {
+            "name": "More than 5",
+            "value": "morethan_5"
+          }
+        ],
+        "whyWeAsk": {
+          "show": false,
+          "text": "Your energy levels and metabolism highly impact the overall health of your skin and hair. Improving these can provide a supportive environment for healthy hair growth."
+        }
+      },
+      {
+        "id": "wrinkle_areas",
+        "component": "inputRadioV4",
+        "group": "skin_concerns",
+        "next": "fineline_description",
+        "reply": "",
+        "tag": "form",
+        "text": "Would you say you have wrinkles all over the face or fine lines in specific areas?",
+        "hindi_text": "",
+        "type": "single_choice",
+        "optionMap": [
+          {
+            "name": "Concentrated in certain areas",
+            "value": "certain_area"
+          },
+          {
+            "name": "Located all over",
+            "value": "located_all_over"
+          }
+        ],
+        "whyWeAsk": {
+          "show": false,
+          "text": "Healthy hair needs nutritional support. However, constipation or compromised gut health can cause poor nutrient absorption, leading to hair follicles being undernourished."
+        }
+      },
+      {
+        "id": "fineline_description",
+        "component": "inputRadioV4",
+        "group": "skin_concerns",
+        "next": "wrinke_describe",
+        "reply": "",
+        "tag": "form",
+        "text": "Describe the fine lines around your eyes and forehead",
+        "type": "single_choice",
+        "optionMap": [
+          {
+            "name": "No fine lines",
+            "value": "no_fine_lines"
+          },
+          {
+            "name": "Few and visible",
+            "value": "few_and_visible"
+          },
+          {
+            "name": "Deep and prominent",
+            "value": "deep_and_prominent"
+          }
+        ],
+        "whyWeAsk": {
+          "show": false,
+          "text": "Gas, acidity, and bloating can be signs of poor digestion or other underlying gut issues, which can indirectly affect the supply of nutrients to hair follicles."
+        }
+      },
+      {
+        "id": "wrinke_describe",
+        "component": "inputRadioV4",
+        "group": "skin_concerns",
+        "next": "firm_saggy_skin",
+        "reply": "",
+        "tag": "form",
+        "text": "Describe the wrinkles around your eyes and forehead",
+        "type": "single_choice",
+        "optionMap": [
+          {
+            "name": "No wrinkles",
+            "value": "no_wrinkle"
+          },
+          {
+            "name": "Few and visible",
+            "value": "few_and_visible"
+          },
+          {
+            "name": "Deep and prominent",
+            "value": "deep_and_prominent"
+          }
+        ],
+        "whyWeAsk": {
+          "show": false,
+          "text": "Stress can produce excess levels of the cortisol hormone, which can affect hair production in the follicles. Managing stress is one of the first steps to keeping your hair health in check."
+        }
+      },
+      {
+        "id": "firm_saggy_skin",
+        "component": "inputRadioV4",
+        "group": "skin_concerns",
+        "next": "outdoor_duration",
+        "reply": "",
+        "tag": "form",
+        "text": "Would you say your skin is Firm or Sagging",
+        "hindi_text": "Kya aap ko theek se neend aati hain?",
+        "type": "single_choice",
+        "optionMap": [
+          {
+            "name": "I have generally firm skin",
+            "value": "firm_skin"
+          },
+          {
+            "name": "My skin is sagging",
+            "value": "sagging"
+          },
+          {
+            "name": "My skin is heavily sagging",
+            "value": "heavy_sagging"
+          }
+        ],
+        "whyWeAsk": {
+          "show": false,
+          "text": "Trouble falling or staying asleep, having irregular sleeping patterns, or feeling sleepy during the day can affect sleep hormone production, which can intefere with the hair growth cycle."
+        }
+      },
+      
+      {
+        "id": "dark_patches",
+        "component": "inputRadioV4",
+        "group": "skin_concerns",
+        "next": "outdoor_duration",
+        "reply": "",
+        "tag": "form",
+        "text": "Do you have any dark patches on your face?",
+        "type": "single_choice",
+        "optionMap": [
+          {
+            "name": "No dark patches",
+            "value": "dark_patches"
+          },
+          {
+            "name": "Yes, light brown patches",
+            "value": "light_brown patches"
+          },
+          {
+            "name": "Yes, dark brown patches",
+            "value": "dark_brown_patches"
+          
+          }
+        ]
+      },
+      {
+        "id": "outdoor_duration",
+        "component": "inputRadioV4",
+        "group": "lifestyle_questions",
+        "next": "stress_check",
+        "reply": "",
+        "tag": "form",
+        "text": "On a typical day, how much time do you spend outdoors?",
+        "type": "single_choice",
+        "optionMap": [
+          {
+            "name": "Less than an hour",
+            "value": "less_than_an_hour"
+          },
+          {
+            "name": "1-4 hours",
+            "value": "less_than_four_hours"
+          },
+          {
+            "name": "More than 4 hours",
+            "value": "more_than_four_hours"
+          }
+        ],
+        "whyWeAsk": {
+          "show": false,
+          "text": "Vitamin deficiencies and certain health conditions like high or low blood pressure, diabetes, cholesterol, etc. can put the body in an imbalanced state, which can compromise organs like hair and skin."
+        }
+      },
+      {
+        "id": "stress_check",
+        "component": "inputRadioV4",
+        "group": "lifestyle_questions",
+        "next": "sleep_check",
+        "reply": "",
+        "sub_text": "Select at least one option",
+        "tag": "form",
+        "text": "How often are you stressed out?",
+        "type": "single_choice",
+        "optionMap": [
+          {
+            "name": "Rarely",
+            "value": "rarely"
+          },
+          {
+            "name": "Maybe once a week",
+            "value": "once_a_week"
+          },
+          {
+            "name": "Multiple times a week",
+            "value": "multiple_times_a_week"
+          },
+          {
+            "name": "Everyday",
+            "value": "everyday"
+          }
+        ]
+      },
+      {
+        "id": "sleep_check",
+        "component": "inputRadioV4",
+        "group": "lifestyle_questions",
+        "next": "water_consumption",
+        "reply": "",
+        "tag": "form",
+        "text": "How many hours of sleep do you usually get at night?",
+        "type": "single_choice",
+        "optionMap": [
+          {
+            "name": "Peacefully for 6-8 hours",
+            "value": "peacefull"
+          },
+          {
+            "name": "Disturbed sleep, I wake up atleast once a night",
+            "value": "disturbed"
+          },
+          {
+            "name":"Have difficulty falling asleep",
+            "value":"difficulty_falling_asleep"
+          },
+          {
+            "name": "I work at night and sleep in the day",
+            "value": "night_shift_routine"
+          }
+        ]
+      },
+      {
+        "id": "water_consumption",
+        "component": "inputRadioV4",
+        "group": "lifestyle_questions",
+        "next": "diet_type",
+        "reply": "",
+        "tag": "form",
+        "text": "How much water do you drink a day?",
+        "type": "single_choice",
+        "optionMap": [
+          {
+            "name": "Less than 3 glasses",
+            "value": "upto_three_glass"
+          },
+          {
+            "name": "4-6 glasses",
+            "value": "upto_six_glass"
+          },
+          {
+            "name": "7-8 glasses",
+            "value": "upto_eight_glass"
+          },
+          {
+            "name": "Even more",
+            "value": "even_more"
+          }
+        ]
+      },
+      {
+        "id": "diet_type",
+        "component": "inputRadioV4",
+        "group": "lifestyle_questions",
+        "next": "make_up",
+        "reply": "",
+        "tag": "form",
+        "text": "How would you describe your diet?",
+        "type": "single_choice",
+        "optionMap": [
+          {
+            "name": "Meat",
+            "value": "meat"
+          },
+          {
+            "name": "Sea food",
+            "value": "sea_food"
+          },
+          {
+            "name": "Dairy",
+            "value": "daily"
+          },
+
+          {
+            "name": "Vegetables and fruits",
+            "value": "vegetables_fruit"
+          },
+          
+          {
+            "name": "Carbs and Starch",
+            "value": "carbs_and_starch"
+          }
+        ]
+      },
+      {
+        "id": "make_up",
+        "component": "inputRadioV4",
+        "group": "lifestyle_questions",
+        "next": "evn_exposure",
+        "reply": "",
+        "tag": "form",
+        "text": "How often do you put make-up on?",
+        "type": "single_choice",
+        "optionMap": [
+          {
+            "name": "Daily",
+            "value": "daily"
+          },
+          {
+            "name": "3-5 times a week",
+            "value": "upto_five_times"
+          },
+          {
+            "name": "1-2 days a week",
+            "value": "two_times_a_week"
+          },
+          {
+            "name": "I do not apply make up on skin (only apply kajal and lipstick)",
+            "value": "dont_apply_make_up"
+          }
+        ]
+      },
+      {
+        "id": "evn_exposure",
+        "component": "inputRadioV4",
+        "group": "lifestyle_questions",
+        "next": "skin_doctor_visit",
+        "reply": "",
+        "tag": "form",
+        "text": "How much are you exposed to sun, dust, and pollution?",
+        "type": "single_choice",
+        "optionMap": [
+          {
+            "name": "I engage in a lot of outdoor activities daily",
+            "value": "",
+            "image_url": "female-hair-fall-describe/heavy-hair-fall.svg"
+          },
+          {
+            "name": "Daily, but only while traveling",
+            "value": "Thinner hair throughout"
+          },
+          {
+            "name": "Rarely",
+            "value": "Hair breakage"
+          }
+        ]
+      },
+      {
+        "id": "skin_doctor_visit",
+        "component": "inputRadioV4",
+        "group": "lifestyle_questions",
+        "next": "health_status",
+        "reply": "",
+        "tag": "form",
+        "text": "Have you visited any dermatologist for your skin issues?",
+        "type": "single_choice",
+        "optionMap": [
+          {
+            "name": "Yes",
+            "value": "yes"
+          },
+          {
+            "name": "No",
+            "value": "no"
+          }
+        ]
+      },
+      {
+        "id": "health_status",
+        "component": "inputCheckbox",
+        "group": "lifestyle_questions",
+        "next": "pregnancy_status",
+        "reply": "",
+        "tag": "form",
+        "text": "Do you face any of these now, or have you faced them in the past?",
+        "type": "multiple_choice",
+        "optionMap": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "PCOS",
+            "value": "pcos"
+          },
+          {
+            "name": "Low iron",
+            "value": "low_iron"
+          },
+          {
+            "name": "Thyroid",
+            "value": "thyroid"
+          },
+          {
+            "name": "Vitamin deficiency",
+            "value": "vitamin_deficiency"
+          },
+          {
+            "name": "Low energy",
+            "value": "low_energy"
+          },
+          {
+            "name": "Extreme weight loss recently",
+            "value": "extreme_weight_loss"
+          },
+          {
+            "name": "I don't know",
+            "value": "dont_know"
+          }
+        ]
+      },
+      {
+        "id": "pregnancy_status",
+        "component": "inputRadioV4",
+        "group": "lifestyle_questions",
+        "next": "customer_values",
+        "reply": "",
+        "tag": "form",
+        "text": "Are you currently pregnant or breastfeeding or planning to get pregnant?",
+        "type": "single_choice",
+        "optionMap": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "Yes, I am pregnant",
+            "value": "pregnant"
+          },
+          {
+            "name": "Yes, I am breastfeeding",
+            "value": "breastfeeding"
+          },
+          {
+            "name": "Yes, I am planning to get pregnant",
+            "value": "planning_to_get_pregnant"
+          }
+        ]
+      },
+      {
+        "id": "customer_values",
+        "component": "inputCheckbox",
+        "group": "misc",
+        "next": null,
+        "reply": "",
+        "tag": "form",
+        "text": "Do you value any of the below in a product?",
+        "type": "multiple_choice",
+        "optionMap": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "Cruelty free",
+            "value": "cruelity_free"
+          },
+          {
+            "name": "100% natural",
+            "value": "natural"
+          },
+          {
+            "name": "Paraben free",
+            "value": "paraben_free"
+          },
+          {
+            "name": "Alcohol free",
+            "value": "alcohol_free"
+          },
+          {
+            "name": "Microplastic free",
+            "value": "microplastic_free"
+          },
+          {
+            "name": "Vegan",
+            "value": "vegan"
+          }
+        ]
+      }
+    ]}
