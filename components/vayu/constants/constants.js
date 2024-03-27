@@ -44,10 +44,10 @@ export const CLICK_POST_URL = "https://trayahealth.clickpost.ai/returns";
 
 export const PLATFORM = "web_native";
 
-export const LODHA_KEY = "FRsdTOje52Xf1S78vv1gmiyPpDcxtgPw";
-export const TOTAL_USERS_FILLED_HAIR_TEST = 2493346;
-const apiKeyGoogle = 'AIzaSyDzuBCDe6OnXZYSCaWytymFlMVEKeHTUq8'
-export const googleScalpApiUrl = `https://vision.googleapis.com/v1/images:annotate?key=${apiKeyGoogle}`;
+// export const LODHA_KEY = "FRsdTOje52Xf1S78vv1gmiyPpDcxtgPw";
+// export const TOTAL_USERS_FILLED_HAIR_TEST = 2493346;
+// const apiKeyGoogle = 'AIzaSyDzuBCDe6OnXZYSCaWytymFlMVEKeHTUq8'
+// export const googleScalpApiUrl = `https://vision.googleapis.com/v1/images:annotate?key=${apiKeyGoogle}`;
 
 // export const trayaLogo = require("../assets/images/traya_logo.jpg");
 // export const trayaLogoDark = `${CDN_BASE_URL}website_images/localImages/TrayaLogoDark.webp`;
